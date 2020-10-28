@@ -1,0 +1,82 @@
+﻿<Window x:Class="HW_WPF_Architecture.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HW_WPF_Architecture"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="336">
+    <Grid x:Name="mainRoot">
+
+        <!--Task - 1 Buttons-->
+
+        <!--
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+
+        <WrapPanel Grid.Column="0" >
+            <Button Width = "auto" Height = "auto" Foreground="Navy" Background="White" FontSize="15">Navy</Button>
+            <Button Width = "auto" Height = "auto" Foreground="Blue" Background="White" FontSize="15">Blue</Button>
+            <Button Width = "auto" Height = "auto" Foreground="Cyan" Background="#FF0C0202" FontSize="15">Aqua</Button>
+            <Button Width = "auto" Height = "auto" Foreground="Teal" Background="White" FontSize="15">Teal</Button>
+            <Button Width = "auto" Height = "auto" Foreground="Olive" Background="#FF130707" FontSize="15">Olive</Button>
+            <Button Width = "auto" Height = "auto" Foreground="Green" Background="#FF0D0404" FontSize="15">Green</Button>
+            <Button Width = "auto" Height = "auto" Foreground="Lime" Background="#FF090505" FontSize="15">Lime</Button>
+            <Button Width = "auto" Height = "auto" Foreground="Yellow" Background="#FF060606" FontSize="15">Yellow</Button>
+            <Button Width = "auto" Height = "auto" Foreground="Orange" Background="#FF0A0505" FontSize="15">Orange</Button>
+            <Button Width = "auto" Height = "auto" Foreground="Red" Background="#FF0E0505" FontSize="15">Red</Button>
+            <Button Width = "auto" Height = "auto" Foreground="Maroon" Background="#FF090808" FontSize="15">Maroon</Button>
+            <Button Width = "auto" Height = "auto" Foreground="Magenta" Background="#FF090808" FontSize="15">Fuchsia</Button>
+            <Button Width = "auto" Height = "auto" Foreground="Purple" Background="#FF0F0F0F" FontSize="15">Purple</Button>
+            <Button Width = "auto" Height = "auto" Background="White" FontSize="15">Black</Button>
+            <Button Width = "auto" Height = "auto" Foreground="Silver" Background="#FF0C0A0A" FontSize="15">Silver</Button>
+            <Button Width = "auto" Height = "auto" Foreground="Gray" Background="#FF0A0A0A" FontSize="15">Gray</Button>
+            <Button Width = "auto" Height = "auto" Foreground="White" Background="#FF060606" FontSize="15">White</Button>
+        </WrapPanel>
+        -->
+
+<!--Task - 2 Calculator-->
+
+      
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="textLabel" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Margin="2,0,121.667,0" />
+        <Button Grid.Column="0" Grid.Row="1" FontSize="24">CE</Button>
+        <Button Grid.Column="1" Grid.Row="1" FontSize="24">C</Button>
+        <Button Grid.Column="2" Grid.Row="1" FontSize="24" Content="&lt;"/>
+        <Button Grid.Column="3" Grid.Row="1" FontSize="24">/</Button>
+        <Button Grid.Column="0" Grid.Row="2" FontSize="24">1</Button>
+        <Button Grid.Column="1" Grid.Row="2" FontSize="24">2</Button>
+        <Button Grid.Column="2" Grid.Row="2" FontSize="24">3</Button>
+        <Button Grid.Column="3" Grid.Row="2" FontSize="24">*</Button>
+        <Button Grid.Column="0" Grid.Row="3" FontSize="24">4</Button>
+        <Button Grid.Column="1" Grid.Row="3" FontSize="24">5</Button>
+        <Button Grid.Column="2" Grid.Row="3" FontSize="24">6</Button>
+        <Button Grid.Column="3" Grid.Row="3" FontSize="24">-</Button>
+        <Button Grid.Column="0" Grid.Row="4" FontSize="24">7</Button>
+        <Button Grid.Column="1" Grid.Row="4" FontSize="24">8</Button>
+        <Button Grid.Column="2" Grid.Row="4" FontSize="24">9</Button>
+        <Button Grid.Column="3" Grid.Row="4" FontSize="24">+</Button>
+        <Button Grid.Column="0" Grid.Row="5" FontSize="24">.</Button>
+        <Button Grid.Column="1" Grid.Row="5" FontSize="24">0</Button>
+        <Button Grid.Column="2" Grid.Row="5" Grid.ColumnSpan="2" FontSize="24">=</Button>
+    
+         
+
+        
+    </Grid>
+</Window>
